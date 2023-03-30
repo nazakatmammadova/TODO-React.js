@@ -1,6 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-  
+ body{
+  background-color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+ } 
+
+ /* todofield */
+ .todoField{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+ }
+ .todoField .todoField_btn{
+  color: white;
+  background-color: coral;
+  border: none;
+  height: 35px;
+  padding: 0 10px;
+  cursor: pointer;
+ }
+ .todoField .todoField_inp{
+  height: 35px;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+ }
+ /* todoList */
+ .todoList{
+  margin-top: 20px;
+  list-style: none;
+  max-height: 350px;
+  overflow-y: auto;
+ }
+ .todoList::-webkit-scrollbar{
+  background-color: coral;
+  width: 5px;
+ }
+ .todoList::-webkit-scrollbar-thumb{
+  background-color: #eee;
+ }
+ .todo_item{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+ }
+ .todo_text{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+ }
+ .todo_btns button{
+  margin-left: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+ }
+ .todo_done{
+  text-decoration: line-through;
+ }
